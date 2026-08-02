@@ -1,0 +1,19 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+
+# Vector DB / generated data
+data/chroma_db/
+
+# Streamlit
+.streamlit/
+
+# OS / editor
+.DS_Store
+.vscode/
