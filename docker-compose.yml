@@ -1,0 +1,14 @@
+services:
+  tn-paddy-bot:
+    build: .
+    container_name: tn-paddy-bot
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - tn_chroma_data:/app/data/chroma_db
+
+volumes:
+  tn_chroma_data:

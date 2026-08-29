@@ -1,0 +1,25 @@
+# Environment / secrets - never bake into the image
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+
+# Vector DB - built inside the container by entrypoint.sh
+data/chroma_db/
+
+# Streamlit
+.streamlit/
+
+# Git / editor / OS
+.git/
+.gitignore
+.vscode/
+.DS_Store
+
+# Dev-only
+tests/
+requirements-dev.txt
